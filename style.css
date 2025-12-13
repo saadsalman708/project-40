@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: #2E3138;
+}
+
+.montFont {
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Zalando Sans Expanded", sans-serif; */
+}
+
+.custom-boader2 {
+    font-weight: 450;
+}
+
+.custom-heading-2 {
+    line-height: 1.2ch;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 3.5rem;
+}
+
+
+/* nav Section */
+
+.nav-Logo-Text {
+    font-weight: 550;
+    letter-spacing: -1px;
+}
+
+.rounded-tab {
+    --r: 25px;
+    /* control the radius */
+
+    line-height: 1.8;
+    /* control the height */
+    padding-inline: .5em;
+    border-inline: var(--r) solid #0000;
+    /* make the bottom corners the large rounded ones */
+    border-radius: 0 0 calc(2*var(--r)) calc(2*var(--r)) / var(--r);
+
+    mask:
+        /* move the radial anchor to the bottom (100%) and adjust mask-position's vertical offset */
+        radial-gradient(var(--r) at var(--r) 100%, #0000 98%, #000 101%) calc(-1*var(--r)) 0 / 100% var(--r) repeat-x,
+        conic-gradient(#000 0 0) padding-box;
+
+    background: #F1F3F5 border-box;
+    /* border-box is needed for gradient coloration */
+    width: fit-content;
+}
+
+
+
+
+/* hero Section  */
+
+.hero {
+    height: 110vh;
+    position: relative;
+    z-index: 2;
+    background-image: url(https://framerusercontent.com/images/SneYrlY0Gug28jpvkN0zRZzSwMY.webp?width=1248&height=975);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 1) 50%);
+    width: 100%;
+    height: 70vh;
+    z-index: -1;
+}
+
+
+.hero-Span-Gradient {
+    margin-top: 2.2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg,
+            #6fbfb1,
+            #6fbfb1,
+            #9cc6b5,
+            #b7a3b5,
+            #b7a3b5,
+            #4fbf9c,
+            #4fbf9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    line-height: 1.2ch;
+}
+
+.hero h1 span {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    color: #7D8187;
+    font-weight: 400;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero button {
+    color: #fff;
+    background-color: #2E3138;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .4s ease;
+}
+
+.hero button:hover {
+    color: #fff;
+    background-color: #4fbf9c;
+}
+
+
+
+
+
+/* Companies Logo Section */
+
+@keyframes slidingLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logoGroup {
+    padding-right: 10rem;
+    gap: 10rem;
+    animation: slidingLeft 60s linear infinite;
+}
+
+
+
+
+
+/* Founder's Section */
+
+.founder-Section h2 span {
+    background: linear-gradient(90deg,
+            #4fbf9c,
+            #9cc6b5,
+            #9cc6b5,
+            #b7a3b5,
+            #b7a3b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.founder-Section button {
+    color: #fff;
+    background-color: #2E3138;
+    font-size: 1.8rem;
+    font-weight: 380;
+    transition: all .4s ease;
+}
+
+.founder-Section button:hover {
+    color: #fff;
+    background-color: #4fbf9c;
+}
+
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinning-Image {
+    width: 90%;
+    animation: spinning 80s linear infinite;
+}
+
+
+
+
+
+/* Provide Section */
+
+.custom-Card {
+    width: 23%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .custom-Card {
+        width: 48%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 786px) {
+    .custom-Card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 486px) {
+
+    .hero-Span-Gradient {
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        font-size: 1rem;
+    }
+
+
+    .logoGroup {
+        padding-right: 6rem;
+        gap: 6rem;
+    }
+}
