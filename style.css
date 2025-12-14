@@ -57,6 +57,14 @@
     width: fit-content;
 }
 
+.collapsed-button {
+    color: #fff;
+    background-color: #2E3138;
+    font-size: 1.6rem;
+    font-weight: 380;
+}
+
+
 
 
 
@@ -269,6 +277,56 @@
 
 
 
+
+/* help Section */
+
+.help-Section div:nth-child(2) {
+    background-color: #E4F1F5;
+}
+
+.help-Section img {
+    width: 90%;
+}
+
+.help-Section h2 span {
+    background: linear-gradient(90deg,
+            #6EB2AE,
+            #4fbf9c,
+            #9cc6b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* ready Section */
+
+.ready-Section-body>div:first-child {
+    background-color: #F8F9FA;
+}
+
+.ready-Section-body h3 {
+    letter-spacing: 1px;
+}
+
+.ready-Section-body-Onboard button {
+    color: #fff;
+    background-color: #2E3138;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .4s ease;
+}
+
+.ready-Section-body-Onboard button:hover {
+    color: #fff;
+    background-color: #4fbf9c;
+}
+
+
+
 /* footer Section */
 
 footer {
@@ -296,6 +354,8 @@ footer input::placeholder {
 
 
 
+
+
 @media (max-width: 1200px) {
     .custom-Card {
         width: 48%;
@@ -310,15 +370,30 @@ footer input::placeholder {
 
 
 
+
+
+
+
+
 @media (max-width: 786px) {
     .custom-Card {
         width: 100%;
     }
+
     .spinning-Image {
-    width: 100%;
-    margin-left: 2rem;
+        width: 100%;
+        margin-left: 2rem;
+    }
+
+    .help-Section img {
+        width: 100%;
+    }
 }
-}
+
+
+
+
+
 
 
 

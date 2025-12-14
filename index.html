@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINT VENTURES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -15,10 +18,10 @@
     <!---------- navbar ---------->
     <nav class="navbar navbar-expand-lg w-100 m-0 p-0">
         <div class="container-fluid navContainer px-2">
-            <a class="navbar-brand d-md-none d-lg-none" href="javascript:void(0)"><img width="32px"
+            <a class="Bijli-Ka-Button navbar-brand d-md-none d-lg-none" href="javascript:void(0)"><img width="32px"
                     src="assets/logo.webp"></a>
             <button
-                class="btn d-md-none d-lg-none custom-boader2 border-1 border-secondary-subtle rounded-0 px-4 ms-auto my-3">Get
+                class="Bijli-Ka-Button btn d-md-none d-lg-none custom-boader2 border-1 border-secondary-subtle rounded-0 px-4 ms-auto my-3">Get
                 Onboard</button>
             <button class="navbar-toggler d-md-none border-0 ms-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -26,11 +29,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="d-md-none d-lg-none">
-                <div class="collapse navbar-collapse" style="height: 100dvh;" id="navbarNavDropdown">
-                    <p>What we provide</p>
-                    <button>Get Onboard</button>
-                    <div>
+            <!-- collapsed on big screen -->
+            <div class="d-md-none d-lg-none w-100">
+                <div class="collapse navbar-collapse border-bottom border-1 m-0" id="navbarNavDropdown">
+                    <p class="text-center my-5">What we provide</p>
+                    <button
+                        class="collapsed-button Bijli-Ka-Button btn d-md-none d-lg-none custom-boader2 border-1 border-secondary-subtle rounded-0 w-100 px-5 py-2 mx-auto">Get
+                        Onboard</button>
+                    <div class="d-flex gap-5 justify-content-center my-5 p-5">
                         <img src="https://www.mintventures.xyz/in.svg" alt="LinkedIn">
                         <img src="https://www.mintventures.xyz/x.svg" alt="X">
                         <img src="https://www.mintventures.xyz/tg.svg" alt="Telegram">
@@ -38,20 +44,23 @@
                 </div>
             </div>
 
+            <!-- collapsed on small screen -->
             <div class="d-none d-sm-none d-md-flex d-lg-flex justify-content-between w-100 mx-3">
-                <a class="navbar-brand montFont fs-4 fw-bold d-flex align-items-center gap-1"
+                <a class="Bijli-Ka-Button navbar-brand montFont fs-4 fw-bold d-flex align-items-center gap-1"
                     href="javascript:void(0)"><img width="32px" src="assets/logo.webp"><span class="nav-Logo-Text">MINT
                         VENTURES</span></a>
                 <div class="rounded-tab d-flex justify-content-center gap-3 px-5 py-2 ms-5">
-                    <a href="javascript:void(0)"><img width="56px" src="https://www.mintventures.xyz/in.svg"
-                            alt="LinkedIn"></a>
-                    <a href="javascript:void(0)"><img width="56px" src="https://www.mintventures.xyz/x.svg" alt="X"></a>
-                    <a href="javascript:void(0)"><img width="56px" src="https://www.mintventures.xyz/tg.svg"
-                            alt="Telegram"></a>
+                    <a href="javascript:void(0)" class="Bijli-Ka-Button"><img width="56px"
+                            src="https://www.mintventures.xyz/in.svg" alt="LinkedIn"></a>
+                    <a href="javascript:void(0)" class="Bijli-Ka-Button"><img width="56px"
+                            src="https://www.mintventures.xyz/x.svg" alt="X"></a>
+                    <a href="javascript:void(0)" class="Bijli-Ka-Button"><img width="56px"
+                            src="https://www.mintventures.xyz/tg.svg" alt="Telegram"></a>
                 </div>
                 <div class="d-flex align-items-center gap-3">
-                    <a class="btn custom-boader2" href="javascript:void(0)">What we provide</a>
-                    <button class="btn custom-boader2 border-1 border-secondary rounded-0 px-4">Get Onboard</button>
+                    <a class="Bijli-Ka-Button btn custom-boader2" href="javascript:void(0)">What we provide</a>
+                    <button class="Bijli-Ka-Button btn custom-boader2 border-1 border-secondary rounded-0 px-4">Get
+                        Onboard</button>
                 </div>
             </div>
         </div>
@@ -68,7 +77,7 @@
             <span class="hero-Span-Gradient text-uppercase fw-bold">Mint Ventures XYZ venture studio</span>
             <h1>From concept<br /><span>to scale</span></h1>
             <p class="my-4">We help founders turn ideas into impactful venture.</p>
-            <button class="btn custom-boader2 rounded-0 z-2 px-5 py-3">Get Onboard</button>
+            <button class="Bijli-Ka-Button btn custom-boader2 rounded-0 z-2 px-5 py-3">Get Onboard</button>
         </div>
 
 
@@ -128,7 +137,9 @@
                     business models are disrupted by AI and Web3. We bring bleeding-edge innovation to industries still
                     rooted in analog practices. If you’re a founder ready to tackle underserved, traditional markets
                     with bold, vertical solutions, we are here to help you make the first move.</p>
-                <button class="btn custom-boader2 rounded-0 text-nowrap me-1  me-md-auto me-lg-auto px-5 py-3">Work with
+                <button
+                    class="Bijli-Ka-Button btn custom-boader2 rounded-0 text-nowrap me-1  me-md-auto me-lg-auto px-5 py-3">Work
+                    with
                     us →</button>
             </div>
 
@@ -208,7 +219,7 @@
                 class="d-flex flex-wrap justify-content-between align-items-center gap-4 gap-md-0 gap-lg-0 border-1 border-bottom border-secondary mt-2 pb-4">
                 <h2 class="custom-heading-2">What we look for</h2>
                 <button
-                    class="btn custom-boader2 rounded-0 border-1 border-secondary border-opacity-50 text-nowrap px-5 py-3">Work
+                    class="Bijli-Ka-Button btn custom-boader2 rounded-0 border-1 border-secondary border-opacity-50 text-nowrap px-5 py-3">Work
                     with
                     us →</button>
             </div>
@@ -250,7 +261,8 @@
                 <p class="fs-6 lh-base mt-2 mb-4">We are industry-agnostic but firmly believe that the transformative
                     potential of emerging technologies like AI and Web3 will have the greatest impact on certain
                     industries.</p>
-                <button class="btn custom-boader2 rounded-0 text-nowrap me-1  me-md-auto me-lg-auto px-5 py-3">Get
+                <button
+                    class="Bijli-Ka-Button btn custom-boader2 rounded-0 text-nowrap me-1  me-md-auto me-lg-auto px-5 py-3">Get
                     Onboard →</button>
             </div>
 
@@ -290,6 +302,138 @@
         </div>
 
 
+
+
+
+        <!------------ Help Section ------------>
+        <div
+            class="dn help-Section w-100 row d-flex flex-wrap gap-5 gap-md-0 gap-lg-0 mt-5 mx-0 py-md-4 py-lg-4 pe-md-4 pe-lg-4">
+            <div class="col-md-6 col-lg-6 d-flex flex-column justify-content-center gap-3 ps-3 ps-md-5 ps-lg-5 py-4">
+                <span
+                    class="d-flex align-items-center gap-1 border-2 border-bottom border-secondary-subtle border-opacity-25 me-auto pb-1">
+                    <div class="bg-secondary opacity-75" style="width: 8px; height: 8px; background: #000;"></div>
+                    005
+                </span>
+                <h2 class="custom-heading-2 lh-1">Companies we've helped<br /><span class="custom-heading-2">grow</span>
+                </h2>
+                <!-- carousel -->
+                <div class="carousel slide carousel-fade custom-synced-carousel mt-3">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/logo02.svg" style="width: 180px; height: 40px;" class=" p-0 m-0">
+                            <p class="fs-5 lh-base mt-4 mb-4">Digital Wardrobe and Brand Activation Platform.</p>
+                            <p class="fs-5">Industry: <span class="fw-bold">Fashion</span></p>
+                            <p class="fs-5">Stage: <span class="fw-bold">Seed</span></p>
+                        </div>
+                        <div class="carousel-item bg-white">
+                            <img src="assets/logo04.webp" style="width: 140px; height: 40px;" class="me-auto">
+                            <p class="fs-5 lh-base mt-4 mb-4">AI-Powered Support and Sales Automations</p>
+                            <p class="fs-5">Industry: <span class="fw-bold">FinTect</span></p>
+                            <p class="fs-5">Stage: <span class="fw-bold">Early Revenue</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- carousel control buttons -->
+                <div class="d-flex gap-5 m-0 me-auto p-0" style="transform: scale(.6) translateX(-50px);">
+                    <button
+                        class="control-prev-all bg-black position-relative rounded-circle border-1 border-black px-3 pt-3 pb-2 m-0"
+                        type="button">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="control-next-all bg-black position-relative rounded-circle border-1 border-black px-3 pt-3 pb-2 m-0"
+                        type="button">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Laptop Screen -->
+            <div class="col-md-6 col-lg-6 row d-flex justify-content-center align-items-center p-0 p-md-5 p-lg-5 m-0">
+                <!-- carousel -->
+                <div class="carousel slide carousel-fade custom-synced-carousel my-5">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/screen01.webp" class="ms-md-4 ms-lg-4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/screen02.webp" class="ms-md-4 ms-lg-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!------------ Potfolio Section ------------>
+
+        <div class="w-100 d-flex flex-column my-5 py-5 pb-md-0 mb-lg-0 px-4">
+            <span
+                class="d-flex align-items-center gap-1 border-2 border-bottom border-secondary-subtle border-opacity-25 me-auto pb-1">
+                <div class="bg-secondary opacity-75" style="width: 8px; height: 8px; background: #000;"></div>
+                006
+            </span>
+            <h2 class="custom-heading-2 mt-3 mb-5">Portfolio companies</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-5">
+                <img class="me-5" src="assets/logo01.svg" alt="Swapin">
+                <img class="me-5" src="assets/logo02.svg" alt="KALLIS">
+                <img class="me-5" src="assets/logo03.svg" alt="Relite">
+                <img class="me-5" src="assets/logo04.webp" style="height: 40px;" alt="Fana">
+                <img class="me-5" src="assets/logo11.svg" style="height: 40px;" alt="lexity">
+            </div>
+        </div>
+
+
+
+
+
+        <!------------ Ready Section ------------>
+        <div class="w-100 d-flex flex-column my-0 my-md-5 my-lg-5 py-1 py-md-5 py-lg-5 px-4">
+            <span
+                class="d-flex align-items-center gap-1 border-2 border-bottom border-secondary-subtle border-opacity-25 me-auto pb-1">
+                <div class="bg-secondary opacity-75" style="width: 8px; height: 8px; background: #000;"></div>
+                007
+            </span>
+            <h2 class="custom-heading-2 mt-3 mb-4 pb-2">Ready to get started?</h2>
+
+            <div class="ready-Section-body row d-flex justify-content-between gap-5 gap-md-0 gap-lg-0 px-3">
+                <div
+                    class="ready-Section-body-Onboard col-md-6 col-lg-6 border border-1 border-secondary border-opacity-50 overflow-hidde p-4">
+                    <h3 class="fs-3">Get onboard</h3>
+                    <p class="fs-5 lh-sm mt-4 mb-4 mb-md-5 mb-lg-5">The future of work is here and SaaS models will be
+                        transformed completely. Let's embark on this journey together.</p>
+                    <button
+                        class="Bijli-Ka-Button btn custom-boader2 rounded-0 text-nowrap me-1 me-md-auto me-lg-auto px-4 px-md-5 px-lg-5 py-3">Work
+                        with us →</button>
+                </div>
+
+                <div class="col-md-6 col-lg-6 p-0">
+                    <div class="border border-1 border-secondary border-opacity-50 ms-md-3 ms-lg-3 p-4">
+                        <h3 class="fs-3">Join the community</h3>
+                        <p class="fs-5 lh-sm mt-4 mb-4 mb-md-5 mb-lg-5">Stay ahead of the curve with insights, updates,
+                            and
+                            exclusive
+                            content. Be
+                            part of a network that shapes the future.</p>
+                        <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-wrap gap-4 me-sm-auto">
+                            <input type="email" placeholder="Your email"
+                                class="border-0 border-1 border-bottom border-black border-opacity-75 fs-5 py-3 ">
+                            <button
+                                class="Bijli-Ka-Button btn custom-boader2 rounded-0 border-1 border-black border-opacity-75 text-black opacity-75 fs-5 px-5 py-3">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
@@ -320,20 +464,23 @@
                 <!-- sign up / subscribe -->
                 <div class="col-md-6 col-lg-6 d-flex flex-column gap-4">
                     <h3 class="custom-heading-3 text-white">Sign up to get the latest news.</h3>
-                    <div class="d-flex flex-column flex-md-row flex-lg-row gap-4">
-                        <input type="email" placeholder="Your email" class="border-0 border-2 border-bottom border-white border-opacity-50 fs-5 text-white py-4">
+                    <div class="d-flex flex-column flex-sm-row flex-md-row flex-lg-row flex-wrap gap-4 me-sm-auto">
+                        <input type="email" placeholder="Your email"
+                            class="border-0 border-2 border-bottom border-white border-opacity-50 fs-5 text-white py-4">
                         <button
                             class="btn custom-boader2 rounded-0 border-2 border-white border-opacity-50 text-nowrap text-white opacity-75 fs-4 px-5 py-3">
-                        Subscribe
+                            Subscribe
                         </button>
                     </div>
-                    <span class="text-end text-white ms-auto">Mint Ventures spearheads Web3 & AI innovation, empowering startups
+                    <span class="text-end text-white ms-auto">Mint Ventures spearheads Web3 & AI innovation, empowering
+                        startups
                         and enterprises with the tools to develop resilient business strategies, optimize processes with
                         AI and launch successful MVPs.</span>
                 </div>
             </div>
 
-            <span class="mx-auto mt-5 pe-md-5 pe-lg-5"><a href="javascript:void(0)" class="btn text-white mx-auto p-0">&copy; SaadSalman708</a></span>
+            <span class="mx-auto mt-md-5 mt-lg-5 pe-md-5 pe-lg-5"><a href="javascript:void(0)"
+                    class="btn text-white mx-auto p-0">&copy; SaadSalman708</a></span>
         </div>
     </footer>
 </body>
